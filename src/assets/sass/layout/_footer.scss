@@ -35,21 +35,10 @@
       padding: _size(element-margin) 0 0 0;
       width: 100%;
 
-      li {
-        border-left: solid 2px _palette(border);
+      div {
         color: _palette(fg-light);
-        display: inline-block;
         font-size: 0.9em;
-        line-height: 1;
-        margin-left: 1em;
         padding: 0;
-        padding-left: 1em;
-
-        &:first-child {
-          border-left: 0;
-          margin-left: 0;
-          padding-left: 0;
-        }
 
         a {
           color: inherit;
@@ -120,18 +109,18 @@
 
   @include breakpoint('<=xsmall') {
     .inner {
-      .copyright {
-        li {
-          border-left: 0;
-          display: block;
-          margin: 1em 0 0 0;
-          padding-left: 0;
-
-          &:first-child {
-            margin-top: 0;
-          }
-        }
-      }
+      //.copyright {
+      //  div {
+      //    border-left: 0;
+      //    display: block;
+      //    margin: 1em 0 0 0;
+      //    padding-left: 0;
+      //
+      //    &:first-child {
+      //      margin-top: 0;
+      //    }
+      //  }
+      //}
     }
   }
 

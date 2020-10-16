@@ -1,0 +1,92 @@
+.social {
+  text-align: center;
+  display: flex;
+  //justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  a {
+    font-size: 2em;
+    border-bottom: none;
+    display: flex;
+    margin: 1.5em 0.5em 0 0;
+  }
+
+  button {
+    line-height: normal;
+    height: auto;
+    padding: 0.5em 1em;
+    font-size: 0.5em;
+
+    i {
+      margin-right: 0.5em;
+    }
+  }
+}
+
+#banner {
+  min-height: 100vh;
+}
+
+#one {
+  p {
+    text-align: justify;
+  }
+}
+
+//.timeline {
+//  text-align: left;
+//
+//  .timeline-item {
+//    margin-bottom: 2em;
+//  }
+//}
+
+//.timeline {
+//  position: relative;
+//
+//  &:after {
+//    content: '';
+//    position: absolute;
+//    top: 0;
+//    width: 0.1em;
+//    height: 100%;
+//    background: green;
+//    left: 0;
+//    right: 0;
+//    margin: auto;
+//  }
+//
+//  .timeline-item {
+//    text-align: left;
+//
+//    &:nth-of-type(even) {
+//      text-align: right;
+//
+//      >div {
+//        &:before {
+//          left: auto;
+//          right: -0.5em;
+//        }
+//      }
+//    }
+//
+//    >div {
+//      padding: 1em;
+//      position: relative;
+//
+//      &:before {
+//        content: '';
+//        position: absolute;
+//        width: 0.75em;
+//        height: 0.75em;
+//        border-radius: 50%;
+//        background: red;
+//        left: -0.5em;
+//        top: 0;
+//        bottom: 0;
+//        margin: auto;
+//      }
+//    }
+//  }
+//}

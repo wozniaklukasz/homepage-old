@@ -1,4 +1,4 @@
-Personal website.
+Personal website [lukaszwozniak.pl](https://lukaszwozniak.pl/).
 
 Based on [gatsby-starter-solidstate](https://github.com/anubhavsrivastava/gatsby-starter-solidstate).
 

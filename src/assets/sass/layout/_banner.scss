@@ -33,7 +33,7 @@
     }
   }
 
-  h2 {
+  h1 {
     @include vendor(
       'transition',
       ('opacity 0.5s ease', 'transform 0.5s ease', 'filter 0.25s ease')
@@ -46,9 +46,14 @@
     font-size: 2.25em;
     margin-bottom: _size(element-margin) * 0.4;
     padding-bottom: _size(element-margin) * 0.2;
+    text-transform: none;
   }
 
-  p {
+  h1 span {
+    font-weight: lighter;
+  }
+
+  div {
     @include vendor(
       'transition',
       ('opacity 0.5s ease', 'transform 0.5s ease', 'filter 0.25s ease')

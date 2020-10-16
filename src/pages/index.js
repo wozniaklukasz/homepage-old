@@ -2,163 +2,109 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
-import pic4 from '../assets/images/pic04.jpg';
-import pic5 from '../assets/images/pic05.jpg';
-import pic6 from '../assets/images/pic06.jpg';
-import pic7 from '../assets/images/pic07.jpg';
+import lw from '../assets/images/lw.jpg';
+import Social from "../components/Social";
+import Timeline from "../components/Timeline";
 
-import config from '../../config';
 const IndexPage = () => (
   <Layout>
     <section id="banner">
       <div className="inner">
-        <div className="logo">
-          <span className="icon fa-diamond"></span>
-        </div>
-        <h2>{config.heading}</h2>
-        <p>{config.subHeading}</p>
+        <h1>Łukasz Woźniak <span>| Software Developer</span></h1>
+        <div>JavaScript | TypeScript | React | Redux | Node</div>
+        <div><Social/></div>
       </div>
     </section>
 
     <section id="wrapper">
       <section id="one" className="wrapper spotlight style1">
         <div className="inner">
-          <a href="/#" className="image">
-            <img src={pic1} alt="" />
-          </a>
+          <div className="image">
+            <img src={lw} alt=""/>
+          </div>
           <div className="content">
-            <h2 className="major">Magna arcu feugiat</h2>
+            <h2 className="major">O mnie</h2>
             <p>
-              Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras
-              turpis ante, nullam sit amet turpis non, sollicitudin posuere
-              urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim
-              dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla
-              cursus.
+              Programowaniem zawodowo zajmuję się od lipca 2014 roku. Duży wpływ na wybór technologii miały studia na
+              Politechnice Wrocławskiej. Projekt inżynierski wykonany w .NET tworzyłem będąc równolegle na stażu jako .NET
+              Developer. Później nastąpiło stopniowe odejście w stronę Front-Endu i JavaScript. Obecnie piszę w stacku React & Redux
+              i w tych technologiach mam największe doświadczenie. Poszerzam również swoją wiedzę o NodeJS. Posiadam pojęcie o
+              działaniu całego stosu technologicznego aplikacji (od bazy danych przez back-end po front-end) oraz o
+              automatyzacji pracy (CI/CD, Docker).
             </p>
-            <a href="/#" className="special">
-              Learn more
-            </a>
+            <p>
+              Prywatnie lubię jeździć na snowboardzie i żeglować.
+            </p>
           </div>
         </div>
       </section>
 
       <section id="two" className="wrapper alt spotlight style2">
         <div className="inner">
-          <a href="/#" className="image">
-            <img src={pic2} alt="" />
-          </a>
           <div className="content">
-            <h2 className="major">Tempus adipiscing</h2>
-            <p>
-              Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras
-              turpis ante, nullam sit amet turpis non, sollicitudin posuere
-              urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim
-              dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla
-              cursus.
-            </p>
-            <a href="/#" className="special">
-              Learn more
-            </a>
+            <h2 className="major">Umiejętności</h2>
+            <div className="row">
+              <div className="col-12-small col-6-medium col-4">
+                <h3>Front-end</h3>
+                <p>
+                  React | Redux | SCSS | CSS | HTML
+                </p>
+              </div>
+                <div className="col-12-small col-6-medium col-4">
+                <h3>Back-end</h3>
+                <p>
+                  Node | Express | GraphQL | REST | Postgres
+                </p>
+              </div>
+              <div className="col-12-small col-6-medium col-4">
+                <h3>Języki programowania</h3>
+                <p>
+                  JavaScript | TypeScript
+                </p>
+              </div>
+              <div className="col-12-small col-6-medium col-4">
+              <h3>Narzędzia / inne</h3>
+                <p>
+                  GIT | WebStorm | Docker | JIRA
+                </p>
+              </div>
+              <div className="col-12-small col-6-medium col-4">
+              <h3>Języki obce</h3>
+                <p>
+                  Polski | Angielski
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="three" className="wrapper spotlight style3">
-        <div className="inner">
-          <a href="/#" className="image">
-            <img src={pic3} alt="" />
-          </a>
-          <div className="content">
-            <h2 className="major">Nullam dignissim</h2>
-            <p>
-              Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras
-              turpis ante, nullam sit amet turpis non, sollicitudin posuere
-              urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim
-              dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla
-              cursus.
-            </p>
-            <a href="/#" className="special">
-              Learn more
-            </a>
-          </div>
-        </div>
-      </section>
+      {/*<section id="three" className="wrapper spotlight style3">*/}
+      {/*  <div className="inner">*/}
+      {/*    <div className="content">*/}
+      {/*      <h2 className="major">Doświadczenie</h2>*/}
+      {/*      <Timeline />*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
 
-      <section id="four" className="wrapper alt style1">
-        <div className="inner">
-          <h2 className="major">Vitae phasellus</h2>
-          <p>
-            Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
-            Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis
-            egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus
-            in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.
-          </p>
-          <section className="features">
-            <article>
-              <a href="/#" className="image">
-                <img src={pic4} alt="" />
-              </a>
-              <h3 className="major">Sed feugiat lorem</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                nulla dignissim dapibus ultrices.
-              </p>
-              <a href="/#" className="special">
-                Learn more
-              </a>
-            </article>
-            <article>
-              <a href="/#" className="image">
-                <img src={pic5} alt="" />
-              </a>
-              <h3 className="major">Nisl placerat</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                nulla dignissim dapibus ultrices.
-              </p>
-              <a href="/#" className="special">
-                Learn more
-              </a>
-            </article>
-            <article>
-              <a href="/#" className="image">
-                <img src={pic6} alt="" />
-              </a>
-              <h3 className="major">Ante fermentum</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                nulla dignissim dapibus ultrices.
-              </p>
-              <a href="/#" className="special">
-                Learn more
-              </a>
-            </article>
-            <article>
-              <a href="/#" className="image">
-                <img src={pic7} alt="" />
-              </a>
-              <h3 className="major">Fusce consequat</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                nulla dignissim dapibus ultrices.
-              </p>
-              <a href="/#" className="special">
-                Learn more
-              </a>
-            </article>
-          </section>
-          <ul className="actions">
-            <li>
-              <a href="/#" className="button">
-                Browse All
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      {/*<section id="four" className="wrapper alt style1">*/}
+      {/*  <div className="inner">*/}
+      {/*    <div className="content">*/}
+      {/*      <h2 className="major">Nullam dignissim</h2>*/}
+      {/*      <p>*/}
+      {/*        Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras*/}
+      {/*        turpis ante, nullam sit amet turpis non, sollicitudin posuere*/}
+      {/*        urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim*/}
+      {/*        dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla*/}
+      {/*        cursus.*/}
+      {/*      </p>*/}
+      {/*      <a href="/#" className="special">*/}
+      {/*        Learn more*/}
+      {/*      </a>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
     </section>
   </Layout>
 );

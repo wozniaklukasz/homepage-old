@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
+import {graphql, StaticQuery} from 'gatsby';
 
 import '../assets/sass/main.scss';
 import Footer from './Footer';
-import SideBar from './Sidebar';
 
 class Layout extends Component {
   constructor(props) {
@@ -17,7 +16,7 @@ class Layout extends Component {
 
   componentDidMount() {
     this.timeoutId = setTimeout(() => {
-      this.setState({ isPreloaded: false });
+      this.setState({isPreloaded: false});
     }, 100);
   }
 
@@ -28,11 +27,11 @@ class Layout extends Component {
   }
 
   render() {
-    const { children, fullMenu } = this.props;
-    const { isPreloaded } = this.state;
+    const {children} = this.props;
+    const {isPreloaded} = this.state;
     return (
-      <StaticQuery
-        query={graphql`
+    <StaticQuery
+      query={graphql`
           query SiteTitleQuery {
             site {
               siteMetadata {
@@ -43,20 +42,15 @@ class Layout extends Component {
         `}
         render={data => (
           <>
-            <Helmet
-              title={data.site.siteMetadata.title}
-              meta={[
-                { name: 'description', content: 'Solid State' },
-                { name: 'keywords', content: 'site, web' },
-              ]}
-            >
-              <html lang="en" />
+            <Helmet>
+              <title>Łukasz Woźniak | Software Developer</title>
+              <meta name="description" content="Łukasz Woźniak Software Developer personal website." />
+              <meta name="keywords" content="Łukasz,Woźniak,Software,Developer,React,Redux,JavaScript,TypeScript,Node,homepage,personal,website" />
             </Helmet>
             <div
               className={isPreloaded ? ' main-body  is-preload' : ' main-body'}
             >
               <div id="page-wrapper">
-                <SideBar fullMenu={fullMenu} />
                 {children}
                 <Footer />
               </div>
